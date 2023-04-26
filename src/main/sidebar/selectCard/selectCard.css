@@ -1,0 +1,19 @@
+.select-card {
+    width: 280px;
+    height: 70px;
+    margin: 0px 35px 35px 40px;
+
+    background-color: #ffffff;
+    outline: none;
+    border: 0px;
+    box-shadow: 2px 4px 12px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    transition: .2s;
+}
+
+.select-card:hover {
+    transform: scale(1.03);
+}

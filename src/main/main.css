@@ -1,0 +1,9 @@
+.main-contents {
+    width: 100vw;
+    height: 700px;
+
+    margin-top: 70px;
+
+    display: flex;
+    /* background-color: aqua; */
+}
