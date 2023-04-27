@@ -1,0 +1,37 @@
+.footer {
+    width: 100%;
+    height: 140px;
+    border-top: solid 2px #25539c;
+    
+
+}
+
+.copyright {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1c1b1a;
+
+    margin: 20px 0px 0px 35px;
+}
+
+.develop-by {
+    margin: 10px 0px 0px 35px;
+    color: grey;
+}
+
+.developers {
+    color: grey;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.github {
+    color: grey;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.github-organizations {
+    color: grey;
+    margin: 3px 0px 0px 35px;
+}
