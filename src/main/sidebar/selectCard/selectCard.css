@@ -1,23 +1,18 @@
-.select-card {
-    width: 280px;
-    height: 70px;
-    margin: 0px 35px 20px 35px;
-    text-align: center;
-    line-height: 70px;
-    text-decoration: none;
-    color: #1a1b1c;
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 30px 0px 0px 0px;
+    color: gray;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    background-color: #ffffff;
-    outline: none;
-    border: 0px;
-    box-shadow: 2px 4px 12px rgba(1, 1, 1, 0.1);
-    border-radius: 10px;
-
-    font-size: 18px;
-
-    transition: .2s;
+    /* background-color: #25539c; */
+    border-radius: 20px;
 }
 
-.select-card:hover {
-    transform: scale(1.03);
+svg {
+    width: 1.5em;
+    height: 1.5em;
 }
