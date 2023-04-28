@@ -1,8 +1,7 @@
 .main-contents {
     width: 100vw;
-    height: 700px;
+    height: 1024px;
 
-    /* margin: 70px 0px 70px 0px; */
 
     display: flex;
 }
