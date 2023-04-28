@@ -5,6 +5,8 @@ import Footer from './footer/Footer'
 import { BrowserRouter, Routes } from 'react-router-dom';
 
 function App() {
+
+
   return (
     <BrowserRouter>
     <div className='entire-wrap'>
