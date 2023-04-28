@@ -31,7 +31,7 @@ function TruckDetail() {
                 <MenuInfo />
                 <MenuInfo />
                 <MenuInfo />
-                <Link className='menu-plus-button'>+</Link>
+                <Link to={'/trucks/menu/create'} className='menu-plus-button'>+</Link>
             </div>
         </div>
     );
