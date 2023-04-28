@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './contents.css'
-import Trucklist from './foodtrucks/Trucklist';
+import Trucklist from './foodtrucks/trucklist/Trucklist';
 
 function Contents() {
 
