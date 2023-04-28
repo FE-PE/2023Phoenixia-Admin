@@ -5,9 +5,8 @@ function Sidebar() {
     
     return (
         <div className='side-bar'>
-            <SelectCard />
-            <SelectCard />
-            <SelectCard />
+            <SelectCard category="푸드트럭"/>
+            <SelectCard category="동아리부스" />
         </div>
     );
 

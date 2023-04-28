@@ -1,6 +1,7 @@
 import './main.css'
 import Sidebar from './sidebar/Sidebar';
 import Contents from './contents/Contents';
+import Footer from '../footer/Footer';
 
 function Main() {
 

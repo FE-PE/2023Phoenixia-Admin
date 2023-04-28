@@ -1,9 +1,9 @@
 import './selectCard.css'
 
-function SelectCard() {
+function SelectCard(props) {
 
     return (
-        <button className='select-card'>푸드트럭</button>
+        <button className='select-card'>{props.category}</button>
     );
 
 }
