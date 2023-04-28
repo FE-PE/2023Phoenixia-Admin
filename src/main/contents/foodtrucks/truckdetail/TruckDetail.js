@@ -2,9 +2,20 @@ import './truckdetail.css'
 import { Link } from 'react-router-dom';
 import MenuInfo from '../menuinfo/MenuInfo';
 
+const dataSet = [
+    {
+        truckName: "언니네 타코야키",
+        truckDescription: "직접 만드는 타코야키 맛집",
+        menus : {
+            maenuName: "타코야키 치즈맛",
+            menuPrice: "4000"
+        }
+    }
+]
+
 function TruckDetail() {
     return (
-        <div className='info-wrap'>
+        <div className='detail-wrap'>
             <div className='top-margin'></div>
             <p className='title-truck-name'>언니네 타코야키</p>
             <div className='button-wrap'>

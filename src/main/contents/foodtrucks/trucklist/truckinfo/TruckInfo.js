@@ -5,8 +5,8 @@ import { FaTrashAlt } from 'react-icons/fa';
 function Truckinfo(props) {
     return(
         <div className='truck-info'>
-            <Link className='truck-name'>{props.truckName}</Link>
-            <p className='truck-description'>{props.truckDescription}</p>
+            <Link to="/trucks/detail" className='truck-name'>{props.truck.truckName}</Link>
+            <p className='truck-description'>{props.truck.truckDescription}</p>
             <Link className='delete-button'><FaTrashAlt /></Link>
         </div>
     );

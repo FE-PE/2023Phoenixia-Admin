@@ -1,16 +1,15 @@
-.info-wrap {
+.detail-wrap {
     width: 100%;
-    height: 100%;
+    height: 800px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .top-margin {
     width: 100%;
     height: 50px;
-    /* background-color: antiquewhite; */
 }
 
 
@@ -73,4 +72,9 @@
     font-size: 30px;
     text-decoration: none;
     margin-bottom: 20px;
+    transition: .2s;
+}
+
+.menu-plus-button:hover {
+    transform: scale(1.02);
 }
