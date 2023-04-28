@@ -1,11 +1,14 @@
 import './trucklist.css'
 import Truckinfo from './truckinfo/TruckInfo';
+import { Link } from 'react-router-dom';
 
 function Trucklist() {
     return (
-        <div>
-            <Truckinfo />
-            <Truckinfo />
+        <div className='info-wrap'>
+            <div className='top-margin'></div>
+            <Truckinfo truckName="asd" truckDescription="asasd" />
+            <Truckinfo truckName="asd" truckDescription="asasd" />
+            <Link className='plus-button'>+</Link>
         </div>
     );
 }

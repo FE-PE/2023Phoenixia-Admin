@@ -1,5 +1,48 @@
 .truck-info {
-    width: 100%;
-    height: 100px;
+    width: 90%;
+    height: 60px;
+    margin-bottom: 30px;
     border-bottom: solid lightgrey 1px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.truck-name {
+    font-weight: 600;
+    margin: 0px 10px 0px 10px;
+    line-height: 60px;
+    width: 200px;
+    text-decoration: none;
+    color: #1c1b1a;
+    transition: .2s;
+
+    /* background-color: antiquewhite; */
+}
+
+.truck-name:hover {
+    transform: scale(1.01);
+}
+
+.truck-description {
+    font-weight: 400;
+    line-height: 60px;
+    width: 300px;
+    text-align: center;
+    color: gray;
+    margin: 0px 10px 0px 10px;
+
+    /* background-color: antiquewhite; */
+}
+
+.delete-button {
+    color: gray;
+    margin: 22px 10px 0px 10px;
+    height: 30px;
+    /* background-color: antiquewhite; */
+}
+
+.delete-button > svg {
+    width: 1em;
+    height: 1em;
 }
