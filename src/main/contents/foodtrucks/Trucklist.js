@@ -6,6 +6,7 @@ function Trucklist() {
     return (
         <div className='info-wrap'>
             <div className='top-margin'></div>
+            <p className='category-title'>Food Trucks</p>
             <Truckinfo truckName="asd" truckDescription="asasd" />
             <Truckinfo truckName="asd" truckDescription="asasd" />
             <Link className='plus-button'>+</Link>

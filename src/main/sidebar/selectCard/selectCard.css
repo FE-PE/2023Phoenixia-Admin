@@ -1,6 +1,6 @@
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     margin: 30px 0px 0px 0px;
     color: gray;
     
@@ -9,10 +9,17 @@
     align-items: center;
 
     /* background-color: #25539c; */
-    border-radius: 20px;
+    border-radius: 23px;
+    transition: .4s;
 }
 
-svg {
+.icon:hover {
+    background-color: #25539c;
+    color: lightgray;
+}
+
+.icon > svg {
     width: 1.5em;
     height: 1.5em;
+    transition: .2s;
 }
