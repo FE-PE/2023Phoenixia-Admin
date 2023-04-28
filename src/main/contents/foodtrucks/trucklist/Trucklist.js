@@ -31,7 +31,7 @@ function Trucklist() {
                     return <Truckinfo truck={truck} />
                 })
             }
-            <Link className='plus-button'>+</Link>
+            <Link to={'/trucks/create'} className='plus-button'>+</Link>
         </div>
     );
 }
