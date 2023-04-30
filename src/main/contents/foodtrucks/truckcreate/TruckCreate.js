@@ -5,7 +5,7 @@ function TruckCreate() {
     return (
         <div className='info-wrap'>
             <div className='top-margin'></div>
-            <p className='category-title'>Food Trucks</p>
+            <p className='category-title'>Food Truck</p>
             <form className='truck-form'>
                 <p className='form-title'>Truck Name</p>
                 <input className='form-input-text width-300' type='text' required></input>

@@ -1,5 +1,6 @@
 .truck-form {
     width: 90%;
+    background-color: aliceblue;
 }
 
 .form-title {
@@ -26,7 +27,7 @@
 }
 
 .width-100per {
-    width: 100%;
+    width: 98%;
 }
 
 .form-submit-button {
