@@ -10,7 +10,7 @@ function Contents() {
     return (
         
         <div className='contents'>
-            <Routes>
+            <Routes basename={process.env.PUBLIC_URL}>
                 <Route path='/trucks' element={<Trucklist/>} />
                 <Route path='/trucks/detail' element={<TruckDetail/>} />
                 <Route path='/trucks/create' element={<TruckCreate/>} />
