@@ -8,13 +8,11 @@ function App() {
 
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div className='entire-wrap'>
       <Header />
       <Main />
       <Footer />
     </div>
-    </BrowserRouter>
   );
 }
 
