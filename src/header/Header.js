@@ -7,7 +7,7 @@ function Header() {
 
         <div className='header'>
             <Link to={'/'} className='logo'>2023 Phoenixia</Link>
-            <img className='likelion-logo' src='/img/likelionsch_logo_long.png'></img>
+            <img className='likelion-logo' src='img/likelionsch_logo_long.png'></img>
         </div>
 
     );
