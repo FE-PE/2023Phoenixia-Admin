@@ -6,6 +6,7 @@ import TruckCreate from './foodtrucks/truckcreate/TruckCreate';
 import MenuCreate from './foodtrucks/manucreate/MenucCreate';
 import BoothList from './clubBooth/boothList/boothList';
 import BoothCreate from './clubBooth/boothCreate/boothCreate';
+import BoothDetail from './clubBooth/boothDetail/BoothDetail';
 
 function Contents() {
 
@@ -20,7 +21,7 @@ function Contents() {
                 
                 <Route path='/booths' element={<BoothList/>} />
                 <Route path='/booths/create' element={<BoothCreate/>} />
-                {/* <Route path='/booths/detail' element={<MenuCreate/>} /> */}
+                <Route path='/booths/detail' element={<BoothDetail/>} />
             </Routes>
         </div>
         

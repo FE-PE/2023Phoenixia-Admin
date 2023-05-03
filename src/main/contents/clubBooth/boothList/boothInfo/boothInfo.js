@@ -6,7 +6,7 @@ function Boothinfo(props) {
     return(
         <div className='truck-info'>
             <p className='truck-description boothNumber'>{props.booth.number}</p>
-            <Link to="/trucks/detail" className='truck-name'>{props.booth.clubName}</Link>
+            <Link to="/booths/detail" className='truck-name'>{props.booth.clubName}</Link>
             <p className='truck-description'>{props.booth.boothDescription}</p>
             <Link className='delete-button'><FaTrashAlt /></Link>
         </div>
