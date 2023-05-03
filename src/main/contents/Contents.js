@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './contents.css'
+import Home from './home/Home';
 import Trucklist from './foodtrucks/trucklist/Trucklist';
 import TruckDetail from './foodtrucks/truckdetail/TruckDetail';
 import TruckCreate from './foodtrucks/truckcreate/TruckCreate';
@@ -14,6 +15,8 @@ function Contents() {
         
         <div className='contents'>
             <Routes basename={process.env.PUBLIC_URL}>
+                <Route path='/' element={<Home/>} />
+
                 <Route path='/trucks' element={<Trucklist/>} />
                 <Route path='/trucks/detail' element={<TruckDetail/>} />
                 <Route path='/trucks/create' element={<TruckCreate/>} />
