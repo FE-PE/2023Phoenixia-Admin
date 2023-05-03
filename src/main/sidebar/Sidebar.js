@@ -10,7 +10,7 @@ function Sidebar() {
             <div className='sidebar-wrap'>
                 <SelectCard link="/" icon={<FaHome/>}/>
                 <SelectCard link="/trucks" icon={<FaTruck/>}/>
-                <SelectCard link="/" icon={<FaPersonBooth/>} />
+                <SelectCard link="/booths" icon={<FaPersonBooth/>} />
             </div>
         </div>
     );
