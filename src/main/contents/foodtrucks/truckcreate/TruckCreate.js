@@ -11,8 +11,8 @@ function TruckCreate() {
                 <input className='form-input-text width-300' type='text' required></input>
                 <p className='form-title'>Truck Description</p>
                 <input className='form-input-text width-100per' type='text' required></input>
-                <p className='form-title'>Truck Image</p>
-                <input type='file' accept='image/*'></input><br/>
+                <p className='form-title'>Truck Image Link</p>
+                <input className='form-input-text width-100per' type='text' ></input><br/>
                 <button className='form-submit-button'>Submit</button>
             </form>
         </div>

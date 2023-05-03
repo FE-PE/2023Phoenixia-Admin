@@ -9,8 +9,8 @@ function MenuCreate() {
                 <input className='form-input-text width-300' type='text' required></input>
                 <p className='form-title'>Menu Price</p>
                 <input className='form-input-text width-300' type='text' required></input>
-                <p className='form-title'>Menu Image</p>
-                <input type='file' accept='image/*'></input><br/>
+                <p className='form-title'>Menu Image Link</p>
+                <input className='form-input-text width-100per' type='text' ></input><br/>
                 <button className='form-submit-button'>Submit</button>
             </form>
         </div>
