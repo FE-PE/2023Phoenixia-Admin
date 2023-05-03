@@ -33,7 +33,7 @@ function BoothList() {
                     return <Boothinfo booth={booth} />
                 })
             }
-            <Link to={'/trucks/create'} className='plus-button'>+</Link>
+            <Link to={'/booths/create'} className='plus-button'>+</Link>
         </div>
     );
 }
