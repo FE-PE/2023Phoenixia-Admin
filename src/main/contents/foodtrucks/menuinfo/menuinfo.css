@@ -13,7 +13,7 @@
     width: 200px;
     height: 120px;
     border-radius: 20px 20px 0px 0px;
-    background-color: antiquewhite;
+    background-color: #ffffff;
 }
 
 .menu-name {
@@ -38,4 +38,7 @@
     margin-right: 5px;
     color: gray;
     font-size: 12px;
+    background-color: #ffffff;
+    border: none;
+    text-decoration: underline;
 }

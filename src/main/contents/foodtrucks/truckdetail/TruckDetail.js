@@ -17,6 +17,8 @@ function TruckDetail() {
             .then((Response) => {
                 console.log(Response.data)
                 setTruck(Response.data)
+                console.log(Response.data.menus)
+                setMenus(Response.data.menus)
             })
             .catch((Error) => console.log(Error));
     }, []);
@@ -33,7 +35,7 @@ function TruckDetail() {
     return (
         <div className='detail-wrap'>
             <div className='top-margin'></div>
-            <p className='title-truck-name'>{truck.name}</p>
+            <p className='title-truck-name mt-top-50px'>{truck.name}</p>
             <div className='button-wrap'>
                 <div></div>
                 <div>
@@ -50,10 +52,10 @@ function TruckDetail() {
             <div className='menus-wrap'>
                 {
                     truck.menus && truck.menus.map((menu) => {
-                        <MenuInfo menu={menu}/>
+                        return <MenuInfo menu={menu}/>
                     })
                 }
-                <Link to={'/trucks/menu/create'} className='menu-plus-button'>+</Link>
+                <Link to={`/trucks/${truck.truck_id}/menu/create`} className='menu-plus-button'>+</Link>
             </div>
         </div>
     );

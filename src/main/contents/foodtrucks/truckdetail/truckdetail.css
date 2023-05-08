@@ -20,6 +20,9 @@
     font-weight: 600;
     color: #1c1b1a;
     border-bottom: solid 1px lightgray;
+}
+
+.mt-top-50px {
     margin-top: 50px;
 }
 

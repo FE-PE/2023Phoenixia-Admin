@@ -1,16 +1,29 @@
 import './menuinfo.css'
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import axios from 'axios';
+import { BASE_URL, CONFIG } from '../../../../api/ApiConfig';
 
-function MenuInfo() {
+function MenuInfo(props) {
+
+    const {truck_id} = useParams();
+
+    function menuDeleteButtonHandler(e) {
+        axios.delete(BASE_URL + "api/foodtruck/" + truck_id + "/menu/" + props.menu.menu_id, CONFIG)
+            .then((res) => {
+                console.log(res.data)
+                window.location = "/2023Phoenixia-Admin/trucks/detail/" + truck_id;
+            })
+            .catch(((Error) => console.log(Error)));
+    }
 
     return (
         <div className='menu-info-card'>
-            <img src='https://user-images.githubusercontent.com/64270501/235955935-5c937fa1-0d8b-4e35-896d-946567448bef.png' className='menu-image'></img>
-            <p className='menu-name'>타코야키 6알</p>
-            <p className='menu-price'>₩ 4000</p>
+            <img src={props.menu.imageUrl} className='menu-image'></img>
+            <p className='menu-name'>{props.menu.name}</p>
+            <p className='menu-price'>₩ {props.menu.price}</p>
             <div className='menu-ud-button-wrap'>
             <Link className='menu-ud-button'>수정</Link>
-            <Link className='menu-ud-button'>삭제</Link>
+            <button onClick={menuDeleteButtonHandler} className='menu-ud-button'>삭제</button>
             </div>
         </div>
     );

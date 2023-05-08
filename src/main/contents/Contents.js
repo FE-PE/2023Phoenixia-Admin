@@ -20,7 +20,7 @@ function Contents() {
                 <Route path='/trucks' element={<Trucklist/>} />
                 <Route path='/trucks/detail/:truck_id' element={<TruckDetail/>} />
                 <Route path='/trucks/create' element={<TruckCreate/>} />
-                <Route path='/trucks/menu/create' element={<MenuCreate/>} />
+                <Route path='/trucks/:truck_id/menu/create' element={<MenuCreate/>} />
                 
                 <Route path='/booths' element={<BoothList/>} />
                 <Route path='/booths/create' element={<BoothCreate/>} />
