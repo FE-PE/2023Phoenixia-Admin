@@ -59,7 +59,7 @@ function BoothCreate() {
     return (
         <div className='info-wrap'>
             <div className='top-margin'></div>
-            <p className='category-title mg-top-50px'>Club Booth</p>
+            <p className='category-title'>Club Booth</p>
             <form onSubmit={submitHandler} className='truck-form'>
                 <p className='form-title'>Club Number</p>
                 <input value={Number} onChange={numberHandler} className='form-input-text width-300' type='text' required></input>
