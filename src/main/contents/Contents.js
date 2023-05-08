@@ -24,7 +24,7 @@ function Contents() {
                 
                 <Route path='/booths' element={<BoothList/>} />
                 <Route path='/booths/create' element={<BoothCreate/>} />
-                <Route path='/booths/detail' element={<BoothDetail/>} />
+                <Route path='/booths/detail/:club_id' element={<BoothDetail/>} />
             </Routes>
         </div>
         

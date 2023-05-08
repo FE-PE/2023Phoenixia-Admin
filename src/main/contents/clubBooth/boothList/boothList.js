@@ -1,28 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Boothinfo from "./boothInfo/boothInfo";
-
-const dataSet = [
-    {
-        number : 1,
-        clubName : "Festival People",
-        boothDescription : "삼각대 대여"
-    },
-    {
-        number : 2,
-        clubName : "Thug",
-        boothDescription : "거리노래방"
-    },
-    {
-        number : 3,
-        clubName : "총학생회",
-        boothDescription : "몰라 총학"
-    }, 
-]
+import axios from "axios";
+import { BASE_URL, CONFIG } from "../../../../api/ApiConfig";
 
 function BoothList() {
 
-    let [booths, setbooths] = useState(dataSet);
+    let [booths, setBooths] = useState([]);
+
+    useEffect(() => {
+        axios.get(BASE_URL + "/api/club", CONFIG)
+            .then((Response) => {
+                console.log(Response.data)
+                var data = Response.data
+                data.sort(function(a,b) {
+                    return a.number - b.number;
+                })
+                setBooths(Response.data)
+            })
+            .catch((Error) => console.log(Error));
+    }, []);
 
     return (
         <div className='info-wrap'>
@@ -33,7 +30,7 @@ function BoothList() {
                     return <Boothinfo booth={booth} />
                 })
             }
-            <Link to={'/booths/create'} className='plus-button'>+</Link>
+            <Link to={`/booths/create`} className='plus-button'>+</Link>
         </div>
     );
 }
