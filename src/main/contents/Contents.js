@@ -18,7 +18,7 @@ function Contents() {
                 <Route path='/' element={<Home/>} />
 
                 <Route path='/trucks' element={<Trucklist/>} />
-                <Route path='/trucks/detail' element={<TruckDetail/>} />
+                <Route path='/trucks/detail/:truck_id' element={<TruckDetail/>} />
                 <Route path='/trucks/create' element={<TruckCreate/>} />
                 <Route path='/trucks/menu/create' element={<MenuCreate/>} />
                 

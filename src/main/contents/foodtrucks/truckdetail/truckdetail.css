@@ -20,6 +20,7 @@
     font-weight: 600;
     color: #1c1b1a;
     border-bottom: solid 1px lightgray;
+    margin-top: 50px;
 }
 
 .detail-truck-description {
@@ -43,6 +44,7 @@
     padding: 3px 5px 3px 5px;
     border-radius: 5px;
     text-decoration: none;
+    background-color: #ffffff;
 }
 
 .title-menus {
@@ -59,6 +61,7 @@
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .menu-plus-button {
@@ -77,4 +80,17 @@
 
 .menu-plus-button:hover {
     transform: scale(1.02);
+}
+
+.truck-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 40px;
+}
+
+.image-wrap {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
 }

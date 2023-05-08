@@ -1,26 +1,22 @@
 import './trucklist.css'
 import Truckinfo from './truckinfo/TruckInfo';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
-
-const dataSet = [
-    {
-        truckName : "언니네 타코야키",
-        truckDescription : "손으로 직접 만든 맛집"
-    },
-    {
-        truckName : "우리집 닭꼬치",
-        truckDescription : "닭꼬치가 맛있어요"
-    },
-    {
-        truckName : "터키 아이스크림",
-        truckDescription : "터키 장인이 직접 온 아이스크림"
-    },
-]
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import { BASE_URL, CONFIG } from '../../../../api/ApiConfig';
 
 function Trucklist() {
 
-    let [trucks, setTrucks] = useState(dataSet);
+    let [trucks, setTrucks] = useState([]);
+
+    useEffect(() => {
+        axios.get(BASE_URL + "/api/foodtruck", CONFIG)
+            .then((Response) => {
+                console.log(Response.data)
+                setTrucks(Response.data)
+            })
+            .catch((Error) => console.log(Error));
+    }, []);
 
     return (
         <div className='info-wrap'>

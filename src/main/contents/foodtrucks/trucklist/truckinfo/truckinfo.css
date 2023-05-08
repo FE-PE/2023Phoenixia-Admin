@@ -39,7 +39,8 @@
     color: gray;
     margin: 22px 10px 0px 10px;
     height: 30px;
-    /* background-color: antiquewhite; */
+    background-color: #ffffff;
+    border: none;
 }
 
 .delete-button > svg {
