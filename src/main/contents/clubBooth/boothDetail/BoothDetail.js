@@ -11,7 +11,7 @@ function BoothDetail() {
     const {club_id} = useParams();
 
     useEffect(() => {
-        axios.get(BASE_URL + "/api/club/" + club_id, CONFIG)
+        axios.get(BASE_URL + "api/club/" + club_id, CONFIG)
             .then((Response) => {
                 console.log(Response.data)
                 setBooth(Response.data)

@@ -9,7 +9,7 @@ function BoothList() {
     let [booths, setBooths] = useState([]);
 
     useEffect(() => {
-        axios.get(BASE_URL + "/api/club", CONFIG)
+        axios.get(BASE_URL + "api/club", CONFIG)
             .then((Response) => {
                 console.log(Response.data)
                 var data = Response.data

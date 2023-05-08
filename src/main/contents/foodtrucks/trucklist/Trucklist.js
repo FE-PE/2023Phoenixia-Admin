@@ -10,7 +10,7 @@ function Trucklist() {
     let [trucks, setTrucks] = useState([]);
 
     useEffect(() => {
-        axios.get(BASE_URL + "/api/foodtruck", CONFIG)
+        axios.get(BASE_URL + "api/foodtruck", CONFIG)
             .then((Response) => {
                 console.log(Response.data)
                 setTrucks(Response.data)
