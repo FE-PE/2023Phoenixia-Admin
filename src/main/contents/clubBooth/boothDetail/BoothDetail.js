@@ -39,7 +39,12 @@ function BoothDetail() {
                     <button onClick={deleteButtonHandler} className='update-delete-button'>삭제</button>
                 </div>
             </div>
+            <p className='detail-truck-description'>{booth.category}</p>
             <p className='detail-truck-description'>{booth.description}</p>
+            <div className='image-wrap'>
+            <img src={booth.imageUrl} className='truck-image'></img>
+            <div></div>
+            </div>
         </div>
     );
 }
