@@ -19,7 +19,7 @@ function Boothinfo(props) {
         <div className='truck-info'>
             <p className='truck-description boothNumber'>{props.booth.number}</p>
             <Link to={`/booths/detail/${props.booth.id}`} className='truck-name'>{props.booth.name}</Link>
-            <p className='truck-description'>{props.booth.description}</p>
+            <p className='truck-description'></p>
             <button onClick={deleteButtonHandler} className='delete-button'><FaTrashAlt /></button>
         </div>
     );

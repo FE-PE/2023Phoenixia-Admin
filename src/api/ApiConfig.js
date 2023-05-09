@@ -1,4 +1,4 @@
-const BASE_URL = "http://fepe.us-east-1.elasticbeanstalk.com/";
+const BASE_URL = "https://www.fepe-server.com/";
 const CONFIG = {
     headers: {
       "Access-Control-Allow-Origin": BASE_URL,

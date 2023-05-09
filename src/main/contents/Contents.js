@@ -8,6 +8,7 @@ import MenuCreate from './foodtrucks/manucreate/MenucCreate';
 import BoothList from './clubBooth/boothList/boothList';
 import BoothCreate from './clubBooth/boothCreate/boothCreate';
 import BoothDetail from './clubBooth/boothDetail/BoothDetail';
+import BoothUpdate from './clubBooth/boothUpdate/BoothUpdate';
 
 function Contents() {
 
@@ -25,6 +26,7 @@ function Contents() {
                 <Route path='/booths' element={<BoothList/>} />
                 <Route path='/booths/create' element={<BoothCreate/>} />
                 <Route path='/booths/detail/:club_id' element={<BoothDetail/>} />
+                <Route path='/booths/update/:club_id' element={<BoothUpdate/>} />
             </Routes>
         </div>
         
