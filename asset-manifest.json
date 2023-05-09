@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/2023Phoenixia-Admin/static/css/main.6362576c.css",
-    "main.js": "/2023Phoenixia-Admin/static/js/main.68c8cb3c.js",
+    "main.js": "/2023Phoenixia-Admin/static/js/main.72644f47.js",
     "static/js/787.312bccb1.chunk.js": "/2023Phoenixia-Admin/static/js/787.312bccb1.chunk.js",
     "index.html": "/2023Phoenixia-Admin/index.html",
     "main.6362576c.css.map": "/2023Phoenixia-Admin/static/css/main.6362576c.css.map",
-    "main.68c8cb3c.js.map": "/2023Phoenixia-Admin/static/js/main.68c8cb3c.js.map",
+    "main.72644f47.js.map": "/2023Phoenixia-Admin/static/js/main.72644f47.js.map",
     "787.312bccb1.chunk.js.map": "/2023Phoenixia-Admin/static/js/787.312bccb1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6362576c.css",
-    "static/js/main.68c8cb3c.js"
+    "static/js/main.72644f47.js"
   ]
 }
