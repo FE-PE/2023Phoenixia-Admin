@@ -39,7 +39,7 @@ function TruckDetail() {
             <div className='button-wrap'>
                 <div></div>
                 <div>
-                    <Link className='update-delete-button'>수정</Link>
+                    <Link to={`/trucks/update/${truck_id}`} className='update-delete-button'>수정</Link>
                     <button onClick={deleteButtonHandler} className='update-delete-button'>삭제</button>
                 </div>
             </div>

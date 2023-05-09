@@ -22,7 +22,7 @@ function MenuInfo(props) {
             <p className='menu-name'>{props.menu.name}</p>
             <p className='menu-price'>₩ {props.menu.price}</p>
             <div className='menu-ud-button-wrap'>
-            <Link className='menu-ud-button'>수정</Link>
+            <Link to={`/trucks/${truck_id}/menu/update/${props.menu.menu_id}`} className='menu-ud-button'>수정</Link>
             <button onClick={menuDeleteButtonHandler} className='menu-ud-button'>삭제</button>
             </div>
         </div>

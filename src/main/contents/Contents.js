@@ -9,6 +9,8 @@ import BoothList from './clubBooth/boothList/boothList';
 import BoothCreate from './clubBooth/boothCreate/boothCreate';
 import BoothDetail from './clubBooth/boothDetail/BoothDetail';
 import BoothUpdate from './clubBooth/boothUpdate/BoothUpdate';
+import TruckUpdate from './foodtrucks/TruckUpdate/TruckUpdate';
+import MenuUpdate from './foodtrucks/menuUpdate/MenuUpdate';
 
 function Contents() {
 
@@ -20,8 +22,10 @@ function Contents() {
 
                 <Route path='/trucks' element={<Trucklist/>} />
                 <Route path='/trucks/detail/:truck_id' element={<TruckDetail/>} />
+                <Route path='/trucks/update/:truck_id' element={<TruckUpdate/>} />
                 <Route path='/trucks/create' element={<TruckCreate/>} />
                 <Route path='/trucks/:truck_id/menu/create' element={<MenuCreate/>} />
+                <Route path='/trucks/:truck_id/menu/update/:menu_id' element={<MenuUpdate/>} />
                 
                 <Route path='/booths' element={<BoothList/>} />
                 <Route path='/booths/create' element={<BoothCreate/>} />
