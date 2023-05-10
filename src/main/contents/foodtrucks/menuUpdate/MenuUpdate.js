@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import { BASE_URL } from "../../../../api/ApiConfig";
+import { BASE_URL, CONFIG } from "../../../../api/ApiConfig";
 
 function MenuUpdate() {
 
@@ -9,6 +9,18 @@ function MenuUpdate() {
     const [Price, setPrice] = useState("");
     const [ImageUrl, setImageUrl] = useState("");
     const {truck_id, menu_id} = useParams();
+
+    useEffect(() => {
+        axios.get(BASE_URL + `api/foodtruck/` + truck_id + "/menu/" + menu_id, CONFIG)
+            .then((Response) => {
+                console.log(Response.data)
+                setName(Response.data.name)
+                setPrice(Response.data.price)
+                setImageUrl(Response.data.imageUrl)
+            })
+            .catch((Error) => console.log(Error));
+    }, []);
+
 
     function nameHandler(e) {
         e.preventDefault();
